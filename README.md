@@ -1,11 +1,10 @@
 # React Props Practice
 
-This repository is created to practice basic React concepts such as:
+This repository is created to practice basic React project focusing on:
 
-- Class components
 - Functional components
-- Props passing
-- Component composition
+- Props & component structure
+- Clean and modern UI with CSS
 
 ## Components Used
 - Course
@@ -13,9 +12,19 @@ This repository is created to practice basic React concepts such as:
 - Duration
 - Fee
 
+## Features
+- Card-based layout
+- Hover effects
+- Responsive design
+
 ## Purpose
 Learning React fundamentals before moving to hooks and modern patterns.
 
 ## Tech Stack
 - React
 - JavaScript (ES6)
+- CSS
+- Vite
+
+## Screenshot
+![Screenshot](![alt text](image.png))

@@ -1,42 +1,72 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.course-card {
+  background: #ffffff;
+  width: 350px;
+  padding: 25px;
+  border-radius: 14px;
   text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.course-card:hover {
+  transform: translateY(-6px);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Title */
+.course-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Duration */
+.course-duration {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
 }
 
-.card {
-  padding: 2em;
+.course-duration span {
+  font-weight: 600;
 }
 
-.read-the-docs {
-  color: #888;
+/* Fee */
+.course-fee {
+  margin: 15px 0;
+  font-size: 18px;
+  color: #1da023;
+  font-weight: 600;
+}
+
+/* Button */
+.enroll-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background: #5336d7;
 }

@@ -1,46 +1,17 @@
-import React, { Component } from "react";
+function Course() {
+  return (
+    <div className="course-card">
+      <h2 className="course-title">React Course</h2>
 
-class Course extends Component {
-  state = {
-    name: "React Course",
-    duration: "2 hours",
-    price: "200",
-  };
+      <p className="course-duration">
+        ⏱ Duration: <span>2 hours</span>
+      </p>
 
-  render() {
-    return (
-      <div className="Course">
-        <Details
-          name={this.state.name}
-          duration={this.state.duration}
-        />
-        <Fee price={this.state.price} />
+      <div className="course-fee">
+        💰 Price: <span>200 Tk</span>
       </div>
-    );
-  }
-}
 
-function Details(props) {
-  return (
-    <div className="Details">
-      Course Name: {props.name}
-      <Duration time={props.duration} />
-    </div>
-  );
-}
-
-function Duration(props) {
-  return (
-    <p className="Duration">
-      Course Duration: {props.time}
-    </p>
-  );
-}
-
-function Fee(props) {
-  return (
-    <div className="Fee">
-      Course Fee: {props.price} Tk
+      <button className="enroll-btn">Enroll Now</button>
     </div>
   );
 }
