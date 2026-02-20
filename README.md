@@ -27,4 +27,4 @@ Learning React fundamentals before moving to hooks and modern patterns.
 - Vite
 
 ## Screenshot
-![Screenshot](![alt text](image.png))
+![alt text](image.png)
